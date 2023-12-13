@@ -1,4 +1,4 @@
-import { getTags } from "./tagsAPIsAPI";
+import { getTags } from "./tagsAPI";
 
 const { createSlice, createAsyncThunk } = require("@reduxjs/toolkit");
 
