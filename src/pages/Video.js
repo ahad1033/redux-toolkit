@@ -22,6 +22,7 @@ export default function Video() {
 
   let content = null;
   if (isLoading) content = <Loading />;
+
   if (!isLoading && isError)
     content = <div className="col-span-12">{error}</div>;
 
@@ -29,7 +30,7 @@ export default function Video() {
     content = <div className="col-span-12">No video found!</div>;
   }
 
-  if (!isLoading && !isError && !video?.id) {
+  if (!isLoading && !isError && video?.id) {
     content = (
       <div class="grid grid-cols-3 gap-2 lg:gap-8">
         <div class="col-span-full w-full space-y-8 lg:col-span-2">
